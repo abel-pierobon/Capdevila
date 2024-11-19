@@ -31,7 +31,17 @@ function NavBar() {
                         className="w-16 flex justify-end"
                     />
                 </button>
-                {!usuario ? null : (
+
+                {!usuario ? (
+                    <div className={`${desplegar ? 'abierto' : 'cerrado'}`}>
+                        <NavLink to={'/'} className="mx-6 text-xl p-2 ">
+                            Inicio
+                        </NavLink>
+                        <NavLink to={'/login'} className="mx-6 text-xl p-2 ">
+                            Iniciar sesión
+                        </NavLink>
+                    </div>
+                ) : (
                     <div className={`${desplegar ? 'abierto' : 'cerrado'}`}>
                         <NavLink to={'/'} className="mx-6 text-xl p-2 ">
                             Inicio
