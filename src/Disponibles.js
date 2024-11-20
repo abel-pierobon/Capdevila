@@ -79,7 +79,7 @@ function Disponibles() {
                     />
                     <button
                         onClick={() => setBusqueda('')}
-                        className="bg-red-500 text-white p-2 rounded-md"
+                        className="hidden md:block bg-red-500 text-white p-2 rounded-md"
                     >
                         Limpiar Nombre
                     </button>
@@ -95,7 +95,7 @@ function Disponibles() {
                     />
                     <button
                         onClick={() => setFecha('')}
-                        className="bg-red-500 text-white p-2 rounded-md"
+                        className="hidden md:block bg-red-500 text-white p-2 rounded-md"
                     >
                         Limpiar fecha
                     </button>

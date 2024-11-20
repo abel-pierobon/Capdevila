@@ -61,12 +61,12 @@ function VerDisponibles({ turnos }) {
                         >
                             Editar
                         </button>
-                        <button
+                        {/* <button
                             className=" bg-blue-500 hover:bg-blue-600 w-[75%] border border-black rounded-md text-white font-semibold hover:font-bold"
                             onClick={() => marcarAtendido()}
                         >
                             Marcar atención
-                        </button>
+                        </button> */}
                         <button
                             className=" bg-red-500 hover:bg-red-600 w-[75%] border border-black rounded-md text-white font-semibold hover:font-bold"
                             onClick={() => setModalEliminar(true)}
