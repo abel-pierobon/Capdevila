@@ -9,7 +9,7 @@ import { ContextTurnero } from './ContextTurnero';
 function VerDisponibles({ turnos }) {
     const [modalEliminar, setModalEliminar] = useState(false);
     const [modalEditar, setModalEditar] = useState(false);
-    const { usuario} = useContext(ContextTurnero);
+    const { usuario } = useContext(ContextTurnero);
 
     const eliminarTurno = async () => {
         try {
@@ -49,9 +49,11 @@ function VerDisponibles({ turnos }) {
                     <p className="text-black ">{turnos.datos.nombre}</p>
                     <p className="text-black">{turnos.datos.apellido}</p>
                 </div>
-                <div className="flex justify-center space-x-2">
-                    <p className="text-black">{turnos.datos.tramite}</p>
+                <div className="flex justify-center">
                     <p className="text-black font-bold">{turnos.datos.fecha}</p>
+                </div>
+                <div className="flex justify-center items-center">
+                    <p className="text-black">{turnos.datos.tramite}</p>
                 </div>
                 {usuario && (
                     <div className="flex flex-col justify-center items-center space-y-2 mt-2">

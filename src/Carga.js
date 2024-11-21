@@ -92,24 +92,17 @@ function Carga() {
 
                 <div className="mb-4">
                     <label className="block text-black-900 text-sm font-black mb-2">
-                        Tipo de Trámite
+                        Observaciones
                     </label>
-                    <select
+                    <input
                         className="shadow appearance-none border rounded w-full py-2 px-3 text-black-900 leading-tight focus:outline-none focus:shadow-outline"
+                        type="text"
+                        placeholder="observaciones"
                         name="tramite"
                         value={persona.tramite}
                         onChange={handleInputChange}
                         required
-                    >
-                        <option value="" disabled>
-                            Selecciona un tipo de trámite
-                        </option>
-                        <option value="Primera vez">Primera vez</option>
-                        <option value="Renovacion">Renovación</option>
-                        <option value="Duplicado">
-                            Duplicado
-                        </option>
-                    </select>
+                    />
                 </div>
 
                 <div className="mb-4">
