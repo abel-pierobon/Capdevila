@@ -67,31 +67,33 @@ function ModalEditarTurno({ setModalEditar, turnos, editarTurno }) {
                         />
                     </div>
                     <div className="mb-4">
-                        <select
+                        <label className="block text-black-900 text-sm font-black mb-2">
+                            Observaciones
+                        </label>
+                        <input
                             className="shadow appearance-none border rounded w-full py-2 px-3 text-black-900 leading-tight focus:outline-none focus:shadow-outline"
+                            type="text"
+                            placeholder="observaciones"
                             name="tramite"
                             value={persona.tramite}
                             onChange={handleInputChange}
-                        >
-                            <option value="Primera vez">Primera vez</option>
-                            <option value="Renovacion">Renovación</option>
-                            <option value="Duplicado">Duplicado</option>
-                        </select>
+                            required
+                        />
                     </div>
                     <div className="mb-4">
-                    <label className="block text-black-900 text-sm font-black mb-2">
-                        Fecha
-                    </label>
-                    <input
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-black-900 leading-tight focus:outline-none focus:shadow-outline"
-                        name="fecha"
-                        type="date"
-                        value={persona.fecha}
-                        onChange={handleInputChange}
-                        required
-                    />
-                </div>
-                    
+                        <label className="block text-black-900 text-sm font-black mb-2">
+                            Fecha
+                        </label>
+                        <input
+                            className="shadow appearance-none border rounded w-full py-2 px-3 text-black-900 leading-tight focus:outline-none focus:shadow-outline"
+                            name="fecha"
+                            type="date"
+                            value={persona.fecha}
+                            onChange={handleInputChange}
+                            required
+                        />
+                    </div>
+
                     <div className="flex justify-center space-x-3">
                         <button
                             type="button"
