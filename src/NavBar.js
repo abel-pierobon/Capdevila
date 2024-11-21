@@ -34,29 +34,29 @@ function NavBar() {
 
                 {!usuario ? (
                     <div className={`${desplegar ? 'abierto' : 'cerrado'}`}>
-                        <NavLink to={'/'} className="mx-6 text-xl p-2 ">
+                        <NavLink to={'/'} className="mx-6 text-xl p-2 hover:text-white">
                             Inicio
                         </NavLink>
-                        <NavLink to={'/login'} className="mx-6 text-xl p-2 ">
+                        <NavLink to={'/login'} className="mx-6 text-xl p-2 hover:text-white">
                             Iniciar sesión
                         </NavLink>
                     </div>
                 ) : (
                     <div className={`${desplegar ? 'abierto' : 'cerrado'}`}>
-                        <NavLink to={'/'} className="mx-6 text-xl p-2 ">
+                        <NavLink to={'/'} className="mx-6 text-xl p-2 hover:text-white">
                             Inicio
                         </NavLink>
 
                         <>
                             <NavLink
                                 to={'/carga'}
-                                className="mx-6 text-xl p-2  "
+                                className="mx-6 text-xl p-2 hover:text-white "
                             >
                                 Cargar turno
                             </NavLink>
                             <Link
                                 onClick={handleLogout}
-                                className="mx-6 text-xl p-2"
+                                className="mx-6 text-xl p-2 hover:text-white"
                             >
                                 Cerrar Sesión
                             </Link>

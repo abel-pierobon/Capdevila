@@ -46,8 +46,8 @@ function VerDisponibles({ turnos }) {
                 `}
             >
                 <div className="flex justify-center items-center space-x-2 font-bold text-xl uppercase ">
-                    <p className="text-black ">{turnos.datos.nombre}</p>
                     <p className="text-black">{turnos.datos.apellido}</p>
+                    <p className="text-black ">{turnos.datos.nombre}</p>
                 </div>
                 <div className="flex justify-center">
                     <p className="text-black font-bold">{turnos.datos.fecha}</p>

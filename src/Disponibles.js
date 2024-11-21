@@ -51,7 +51,7 @@ function Disponibles() {
         } else {
             const search = busqueda.toLowerCase();
             const filtered = dataDisponibles.filter((turno) =>
-                `${turno.datos.nombre} ${turno.datos.apellido}`
+                ` ${turno.datos.apellido}`
                     .toLowerCase()
                     .includes(search),
             );
@@ -68,20 +68,20 @@ function Disponibles() {
             )}
             <div className="flex flex-col md:flex-row justify-start items-center space-x-4 mb-6">
                     <h2 className="font-semibold hidden md:block">
-                        Filtrar por Nombre y apellido:
+                        Filtrar por apellido:
                     </h2>
                     <input
                         type="text"
                         value={busqueda}
                         onChange={(e) => setBusqueda(e.target.value)}
                         className="border border-gray-700 rounded-md p-2"
-                        placeholder="Nombre y apellido"
+                        placeholder="Apellido"
                     />
                     <button
                         onClick={() => setBusqueda('')}
                         className="hidden md:block bg-red-500 text-white p-2 rounded-md"
                     >
-                        Limpiar Nombre
+                        Limpiar Apellido
                     </button>
                     <h2 className="font-semibold hidden md:block">
                         Filtrar por fecha:
