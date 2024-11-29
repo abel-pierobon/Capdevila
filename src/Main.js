@@ -21,7 +21,7 @@ function Main() {
     return (
         <main className="p-2 grow mx-10 fondoMain ">
             <Routes>
-                <Route path="/" element={<Disponibles />} />
+                <Route path="/" element={<Login />} />
                 <Route
                     path="/carga"
                     element={verificarAutenticacion(<Carga />)}

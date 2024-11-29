@@ -37,13 +37,13 @@ function NavBar() {
                         <NavLink to={'/'} className="mx-6 text-xl p-2 hover:text-white">
                             Inicio
                         </NavLink>
-                        <NavLink to={'/login'} className="mx-6 text-xl p-2 hover:text-white">
+                        {/* <NavLink to={'/login'} className="mx-6 text-xl p-2 hover:text-white">
                             Iniciar sesión
-                        </NavLink>
+                        </NavLink> */}
                     </div>
                 ) : (
                     <div className={`${desplegar ? 'abierto' : 'cerrado'}`}>
-                        <NavLink to={'/'} className="mx-6 text-xl p-2 hover:text-white">
+                        <NavLink to={'/disponibles'} className="mx-6 text-xl p-2 hover:text-white">
                             Inicio
                         </NavLink>
 
